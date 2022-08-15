@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
 
-    'blog',
 
     'rest_framework.authtoken',
     'django.contrib.sites',
@@ -47,6 +46,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
+
+    'blog',
+    "sessions_auth_app",
 ]
 
 SITE_ID = 1

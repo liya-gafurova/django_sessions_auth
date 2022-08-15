@@ -13,7 +13,7 @@ from blog.serializers import ArticleSerializer
 
 
 class ArticleModelViewSet(ModelViewSet):
-    permission_classes = (AllowAny,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = ArticleSerializer
     queryset = Article.objects.all()
 
